@@ -24,8 +24,8 @@ services:
       PGDATA: "/var/lib/postgresql/data/pgdata"
     ports:
       - "5432:5432"
-    volumes:
-      - ./pg/data:/var/lib/postgresql/data
+    #volumes:
+    #  - ./pg/data:/var/lib/postgresql/data
     networks:
       - mignet
   
@@ -38,8 +38,8 @@ services:
       PGADMIN_CONFIG_SERVER_MODE: "False"
     ports:
       - "5052:80"
-    volumes:
-      - ./pg/pgadmin:/var/lib/pgadmin
+    #volumes:
+    #  - ./pg/pgadmin:/var/lib/pgadmin
     networks:
       - mignet
 
