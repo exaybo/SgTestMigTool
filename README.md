@@ -15,6 +15,3 @@ docker compose run --rm migapp print
 очистка таблиц:
 docker compose run --rm migapp clear
 
-тестовые данные лежат в ./TestData и пробрасываются в контейнер в /app/TestData
-бд и профль pgadmin - в ./pg
-
